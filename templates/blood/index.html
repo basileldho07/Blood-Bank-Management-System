@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .xyz{
+          margin-bottom: 0px;
+          height:87vh;
+          background-image: url('{% static "image/homepage.jpg" %}');
+          background-size: cover;
+          background-repeat: no-repeat;
+
+        }
+        .main-title{
+            font-size:45px;
+            text-align:left;
+            font-weight:800;
+            margin:0 0 0 25vw;
+            padding:0;
+
+        }
+        .red{
+            color:red;
+        }
+      </style>
+
+</head>
+
+
+<body>
+  {% include "blood/navbar.html" %}
+<br>
+<section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+    <div class="container text-center">
+        <p class="main-title red"> HELP SAVE A LIFE<span></span></p>
+         <h1 class="main-title"> GIVE THE GIFT OF BLOOD</h1>
+    </div>  
+  </section>
+
+
+  <div class="jumbotron" style="margin-top: 0px;margin-bottom: 0px;">
+
+    <p class="lead text-center">Welcome To Blood Bank Management System
+      </p>
+    
+    <p class="text-center">- Available Features: Patient Login, Donor Login, Admin Login -</p>
+    
+  </div>
+  {% include "blood/footer.html" %}
+
+
+</body>
+
+</html>
